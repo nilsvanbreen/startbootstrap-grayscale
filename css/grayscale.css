@@ -74,20 +74,10 @@ a {
 }
 
 
-
-@media(max-width:767px){
-
-    #about{
-        height: 150vh;
-    }
-    #about .row .headbtn{
-        visibility: hidden;
-    }
-}
-
 #about p{
-    color: #4e6dd1;
-    text-align: justify;
+    color: #b3b3b3;
+    text-align: center;
+    margin-bottom: 25px;
 }
 
 .bouke{
@@ -96,6 +86,7 @@ a {
 }
 .bouke h3{
     padding-top: 25px;
+    margin-bottom: 10px;
 
 }
 .nils{
@@ -105,19 +96,8 @@ a {
 }
 .nils h3{
     padding-top: 25px;
+    margin-bottom: 10px;
 
-}
-
-.carousel-control.left, .carousel-control.right {
-    background-image: none
-}
-
-.tales {
-  width: 100%;
-}
-.carousel-inner{
-  width:100%;
-  max-height: 200px;
 }
 
 .navbar-fixed-top li a{
@@ -135,10 +115,46 @@ a {
 }
 
 #download {
+    position: relative;
+    background-image: url("img/branding.png");
+    background-position: bottom;
+    background-size: cover;
     background-color: #FFFFFF;
     height: 100vh;
     width: 100%;
     padding-top: 10%;
+}
+
+@media (max-width: 1281px) {
+  #download {
+    background: url("img/m-branding.png");
+    background-position: bottom;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 720px) {
+  #download {
+    background: url("img/s-branding.png");
+    background-position: bottom;
+    background-size: cover;
+  }
+  .headbtn {
+    visibility: hidden;
+  }
+  #about {
+    height: 170vh;
+  }
+}
+
+@media (max-height: 569px){
+    p {
+        font-size: 16px;
+    }
+    #about {
+    height: 190vh;
+  }
+
 }
 
 #download .btn-circle {
@@ -159,10 +175,11 @@ a {
 }
 
 #contact {
+    position: relative;
     background-color: #09d193;
-    height: 90vh;
+    height: 100vh;
     width:100%;
-    padding-top: 10%;
+    padding-top: 12%;
 
 }
 .page-scroll {
@@ -192,6 +209,13 @@ a:focus {
     font-weight: 400;
 }
 
+.navbar-toggle{
+    font-size: 20px;
+    margin-top: 4px;
+    margin-right: 40px;
+    margin-bottom: 4px;
+}
+
 .navbar-custom {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
@@ -208,11 +232,11 @@ a:focus {
     outline: 0;
 }
 
-}
 .navbar-custom .navbar-brand .navbar-toggle {
     padding: 4px 6px;
     font-size: 16px;
     color: #fff;
+
 }
 
 .navbar-custom .navbar-brand .navbar-toggle:focus,
@@ -289,7 +313,9 @@ a:focus {
         padding-top: 5px;
         padding-bottom: 5px;
     }
+
 }
+
 
 .intro {
     position: relative;
@@ -307,14 +333,6 @@ a:focus {
     -o-background-size: cover;
 }
 
-@media(min-width:1700px){
-
-.intro .container{
-    margin-left: 10%;
-}
-
-
-}
 
 .intro .intro-body {
      background-image: url("img/bgheader-01.png");
@@ -331,6 +349,15 @@ a:focus {
     margin-left: 20px;
     margin-bottom: 20px;
 }
+
+.homebtn{
+    position: absolute;
+    font-size: 5px;
+    bottom: 1px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
 
 .intro .intro-body .brand-heading {
     font-size: 20px;
@@ -354,6 +381,7 @@ a:focus {
     .intro .intro-body .intro-text {
         font-size: 26px;
     }
+
 }
 
 .btn-circle {
@@ -370,6 +398,26 @@ a:focus {
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
+}
+
+.home-circle{
+     line-height: 1.4;
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+    padding: 0px 0px;
+    border: 2px solid #fff;
+    border-radius: 100%!important;
+    font-size: 30px;
+    color: #fff;
+    background: 0 0;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.glyphicon{
+    line-height: 1.4;
 }
 
 .btn-circle:hover,
@@ -431,6 +479,82 @@ a:focus {
     }
 }
 
+
+input{
+    color: #666;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: #fff;
+    border-radius: 15px;
+    border:none;
+    padding:5px;
+    width:300px;
+    outline:none;
+
+
+}
+
+.send input{
+    color: #09d193;
+    background-color: #666;
+    font-style: capitalize;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+
+}
+
+.name input{
+    text-indent: 10px;
+}
+.email input{
+    text-indent: 10px;
+}
+
+textarea{
+      color: #666;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    width: 300px;
+    height: 150px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border-style: none;
+    text-indent: 10px;
+    padding-top: 5px;
+
+}
+
+
+label{
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#contact h2{
+    margin-bottom: 10px;
+
+}
+
+#about h2{
+    margin-bottom: 10px;
+}
+
+
+.btnposition{
+    position: relative;
+}
+
+.name{
+    padding-bottom: 20px;
+}
+
+.email{
+    padding-bottom: 20px;
+}
+
+.send{
+    float: center;
+}
 .download-section {
     color: #666666;
     height: 100vh;
@@ -444,13 +568,13 @@ a:focus {
 }
 
 @media(min-width:767px) {
-    .content-section {
-        padding-top:;
-    }
+
+    
 
     .download-section {
         padding: 0px 0;
     }
+}
 
 .btn {
     border-radius: 0;
@@ -462,12 +586,13 @@ a:focus {
     transition: all .3s ease-in-out;
 }
 
+
 .btn-default {
     border: 1px solid #42dca3;
     color: #42dca3;
     background-color: transparent;
-}
 
+}
 .btn-default:hover,
 .btn-default:focus {
     border: 1px solid #42dca3;
@@ -475,14 +600,57 @@ a:focus {
     color: #000;
     background-color: #42dca3;
 }
+.message {
+    text-align: top;
+}
 
 ul.banner-social-buttons {
     margin-top: 0;
 }
 
-@media(max-width:1199px) {
+
+@media(max-width:1280px) {
     ul.banner-social-buttons {
         margin-top: 15px;
+    }
+   }
+
+@media(max-width: 1000px){
+    .headmargins {
+        margin-left: 5%;
+    }
+    .titlehead{
+        margin-left: 5%;
+    }
+
+}
+
+@media (max-width: 720px){
+
+    .navbar-fixed-top .navbar-brand{
+        color: #fff;
+    }
+    .navbar-fixed-top li a{
+        color: #fff;
+    }
+}
+
+@media(max-height: 601px){
+   
+    #about {
+        padding-top: 8%;
+    }
+    #about p{
+    margin-bottom: 5px;
+    }
+    
+
+}
+
+@media (max-height: 569px){
+    #contact {
+        padding-top: 8%;
+        height: 125vh;
     }
 }
 
@@ -498,22 +666,12 @@ ul.banner-social-buttons {
     }
 }
 
-footer {
-    background-color: #09d193;
-     height: 10vh;
-    width: 100%;
-    padding: none;
-    border-top: 1px #666666 solid;
-}
 
-footer p {
-    margin: 0;
-}
 
 ::-moz-selection {
     text-shadow: none;
     background: #fcfcfc;
-    background: rgba(255,255,255,.2);
+ background: rgba(255,255,255,.2);
 }
 
 ::selection {
