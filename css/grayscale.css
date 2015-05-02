@@ -125,7 +125,7 @@ a {
     padding-top: 10%;
 }
 
-@media (max-width: 1281px) {
+@media (max-width: 1024px) {
   #download {
     background: url("img/m-branding.png");
     background-position: bottom;
