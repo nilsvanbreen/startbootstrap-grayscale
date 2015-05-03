@@ -89,6 +89,11 @@ a {
     margin-bottom: 10px;
 
 }
+
+.form ::selection{
+    color: #fff;
+    background: #09d193;
+}
 .nils{
     margin-left: 20px;
     vertical-align: top;
@@ -99,6 +104,20 @@ a {
     margin-bottom: 10px;
 
 }
+.logofontposition{
+    padding-left: 20%;
+}
+
+.navbar-brand .page-scroll{
+    position: relative;
+}
+
+.white-icon{
+    position:absolute;
+}
+.green-icon{
+    position: absolute;
+}
 
 .navbar-fixed-top li a{
     color: #09d193;
@@ -108,11 +127,18 @@ a {
 }
 .navbar-fixed-top .navbar-brand{
     color: #09d193;
+    padding-top: 6px;
 }
 
 .top-nav-collapse .navbar-brand{
     color: #fff;
+    padding-top: 6px;
 }
+
+.top-nav-collapse .navbar-brand .green-icon{
+    visibility: hidden;
+}
+
 
 #download {
     position: relative;
@@ -198,12 +224,19 @@ a {
     margin-bottom: 5px
 
 }
+
+.navbar-brand>img
+{
+    display: inline;
+}
 a:hover,
 a:focus {
     text-decoration: none;
     color: #1d9b6c;
 }
-
+.hideheading{
+    visibility: hidden;
+}
 
 .light {
     font-weight: 400;
@@ -498,7 +531,7 @@ input{
     background-color: #666;
     font-style: capitalize;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
 
 }
@@ -625,7 +658,7 @@ ul.banner-social-buttons {
 
 }
 
-@media (max-width: 720px){
+@media (max-width: 760px){
 
     .navbar-fixed-top .navbar-brand{
         color: #fff;
@@ -633,7 +666,19 @@ ul.banner-social-buttons {
     .navbar-fixed-top li a{
         color: #fff;
     }
+    .navbar-fixed-top .green-icon{
+        visibility: hidden;
+    }
+
+    .logofontposition{
+        padding-left:15%; 
+    }
+    #download h2{
+        text-align: center;
+    }
+
 }
+
 
 @media(max-height: 601px){
    
